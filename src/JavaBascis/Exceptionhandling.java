@@ -12,7 +12,7 @@ public class Exceptionhandling {
 		System.out.println("Enter your name");
 
 		try {
-			scann.nextLine();// nextLine() method is used to read the string data given by the use and it
+			scann.nextLine();// nextLine() method is used to read the string data given by the user and it
 								// will not stop once it find the space
 
 		}
@@ -21,7 +21,7 @@ public class Exceptionhandling {
 		}
 
 //===========================================================================
-
+/*
 		System.out.println("Let us start with the Addtion");
 
 		System.out.println("Enter the number");
@@ -134,6 +134,7 @@ public class Exceptionhandling {
         } else {
             System.out.println("Invalid input. Please enter a valid day initial.");
         }
+*/        
 
 	}
 }

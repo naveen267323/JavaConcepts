@@ -12,7 +12,7 @@ class Cat {
 	}
 
 	public Cat() {
-		name = "Cat";
+	//	name = "Cat";
 	}
 
 	public void displaymessage() {

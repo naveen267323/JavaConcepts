@@ -1,6 +1,7 @@
 package JavaBascis;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class CollectionArraylist {
 
@@ -8,7 +9,12 @@ public class CollectionArraylist {
 		// TODO Auto-generated method stub
 
 		ArrayList mylist = new ArrayList(); // Arraylist can store any datatype values such as :
-											// String,interger,boolean,double
+											// String,interger,boolean,double -- called as Hetogenius data
+		
+	//	LinkedList mylist = new LinkedList();
+		
+		
+		
 		mylist.add("Naveen");
 		mylist.add("Dutt");
 		mylist.add(36);
@@ -50,7 +56,8 @@ public class CollectionArraylist {
 
 		String validate = (String) mylist.get(2);
 
-		if (validate == "Dutt");
+		if (validate == "Dutt")
+			;
 		mylist.set(2, "Naveen");
 		System.out.println(mylist);
 
@@ -62,6 +69,13 @@ public class CollectionArraylist {
 		if (check == 500.0);
 		mylist.set(4, 500000.0);
 		System.out.println(mylist);
+
+		// Reading all the values in the arraylist
+
+		for (Object list : mylist) {
+			System.out.println(list);
+		}
+
 	}
 
 }

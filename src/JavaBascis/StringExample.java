@@ -97,6 +97,8 @@ public class StringExample {
 
 		System.out.println(Arrays.toString(st17));// will join the array and print the value of the array
 
+		System.out.println(st15.length() + " naveendutt1988@gmail.com");
+		
 //==========================
 //print the strings separtly : naveendutt1988@gmail.com 
 

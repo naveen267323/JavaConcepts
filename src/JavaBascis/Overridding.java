@@ -35,10 +35,11 @@ class ICICI extends Bank {
 
 public class Overridding {
 
-	
 //Method overriding - All the child class uses the same method name as parent method 
-//Method overriding is also called as Run time Polymorphism
-//Method overriding can be achived only when we have atleast 1 parent and 1 child
+//Method overriding is also called as RUN time Polymorphism
+//this is also called as DYNAMIC polymorphism
+//Method overriding can be achived only when we have atleast 1 parent and 1 child - INHERITANCE
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -46,16 +47,13 @@ public class Overridding {
 		Bank bank = new Bank();
 		bank.ROI();
 // Creating an object for child class
-		SBI sbi = new SBI();
-		sbi.ROI();
+		Bank bank1 = new SBI();
+		bank1.ROI();
 
 // Creating an object for another child class
-		ICICI icici = new ICICI();
-		icici.ROI();
+		Bank bank2 = new ICICI();
+		bank2.ROI();
 
-		
-		
-		
 	}
 
 }

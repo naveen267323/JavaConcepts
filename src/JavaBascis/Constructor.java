@@ -1,32 +1,29 @@
 package JavaBascis;
 
-class Dog {
-	String name;
+public class constructor {
 
-	// Constructor - Constructor uses the same name as class - in this example Dog
-	// is a class and Dog is constructor name
-	// Constructor will not have return type
-	// If you do not pass any parameter in the constructor then it is called Default
-	// constructor
-	public Dog() {
-		name = "Bull dog";
+//default constructor	
+	constructor() {
+		System.out.println("this is a message from constructor");
 	}
 
-	public void displaymessage() {
-		System.out.println("Dog name " + name);
-
+//parameterized constructor	
+	constructor(int x) {
+	//	x = 10;
+		System.out.println("this is a message from parameterized constructor  " + x);
 	}
 
-}
-
-public class Constructor {
+	void displaymessage() {
+		System.out.println("this is a displaymessage method and it can be called in both the constuctor ");
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Dog mydog = new Dog();
-		mydog.displaymessage();
-
+		constructor con = new constructor(); // calling default constuctor is called
+		con.displaymessage();
+		constructor con1 = new constructor(10); // calling parameter constructor is called
+		con1.displaymessage();
 	}
 
 }

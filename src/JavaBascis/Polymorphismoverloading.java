@@ -21,6 +21,11 @@ class message {
 		System.out.println("Display message " + name + +age);
 	}
 
+	public void displaymessage() {
+
+		System.out.println("Display message ");
+	}
+
 }
 
 public class Polymorphismoverloading {
@@ -30,14 +35,16 @@ public class Polymorphismoverloading {
 
 		message msg = new message();
 
-		
 		// Calling overloaded methods
-		//The method to call is resolved at compile time based on the arguments passed.
-		//The displaymessage() method is overloaded with different parameters (one takes a String, one takes an int, and one takes both).
-		
+		// The method to call is resolved at COMPILE time based on the arguments passed.
+		// The displaymessage() method is overloaded with different parameters (one
+		// takes a String, one takes an int, and one takes both).
+		// this is also called as - STATIC polymorphism
+
 		msg.displaymessage("Hello");
 		msg.displaymessage(37);
 		msg.displaymessage("Naveen ", 38);
+		msg.displaymessage();
 	}
 
 }

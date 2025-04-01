@@ -1,6 +1,8 @@
 package JavaBascis;
 
 import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 
 public class HashSetTest {
 
@@ -23,17 +25,19 @@ public class HashSetTest {
 
 		System.out.println(hashset);
 
+	
 		// Passing hetrogenius data into Hashset collection.
 
 		HashSet hashset1 = new HashSet();
+		
+	//	LinkedHashSet hashset1 = new LinkedHashSet();
+		
 		hashset1.add("Naveen");
 		hashset1.add(100);
 		hashset1.add("mar/10/1988");
 		hashset1.add("Dutt");
 		hashset1.add(100);
-		
-		
-		
+
 		System.out.println(hashset1.size());
 
 		// input in the hashset1 contains duplicate value : 100 but in the output you
@@ -48,11 +52,13 @@ public class HashSetTest {
 
 		hashset1.remove("Naveen");
 		System.out.println(hashset1);
-
+		
+	
+		
+		
 		// read all the values in the hashset collection using loop
 
-		for (Object x : hashset1)
-		{
+		for (Object x : hashset1) {
 			System.out.println(x);
 		}
 
